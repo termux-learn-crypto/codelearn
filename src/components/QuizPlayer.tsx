@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 
 interface QuizQuestion {
@@ -77,7 +75,7 @@ export default function QuizPlayer({ questions }: QuizPlayerProps) {
 
       <div className="space-y-2">
         {q.options.map((opt, idx) => {
-          let cls = "w-full text-left p-3 rounded-lg border transition-colors ";
+          let cls = "w-full text-left p-3 rounded-lg border transition-colors break-words ";
           if (!showAnswer) {
             cls += "border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700/50";
           } else if (idx === q.correct) {

@@ -52,10 +52,10 @@ export default function AboutPage() {
         <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-6">📅 COBOL Ki Yatra</h2>
         <div className="space-y-4">
           {timeline.map((t) => (
-            <div key={t.year} className="flex items-start gap-4">
-              <div className="w-16 text-right font-mono font-bold text-cobol-600">{t.year}</div>
-              <div className="w-px bg-slate-300 dark:bg-slate-600 mt-2" />
-              <div className="text-slate-600 dark:text-slate-400">{t.event}</div>
+            <div key={t.year} className="flex items-start gap-3 sm:gap-4">
+              <div className="w-14 sm:w-16 shrink-0 text-right font-mono font-bold text-cobol-600 text-sm sm:text-base">{t.year}</div>
+              <div className="w-px bg-slate-300 dark:bg-slate-600 mt-2 shrink-0" />
+              <div className="text-slate-600 dark:text-slate-400 text-sm sm:text-base break-words">{t.event}</div>
             </div>
           ))}
         </div>

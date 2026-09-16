@@ -18,7 +18,7 @@ export default function CompilerPage() {
             <button className="px-3 py-1 text-xs rounded-md bg-cobol-600 text-white hover:bg-cobol-700 transition-colors">▶ Run</button>
           </div>
           <textarea
-            className="w-full h-96 p-4 bg-slate-900 text-slate-100 font-mono text-sm leading-relaxed resize-none focus:outline-none"
+            className="w-full h-64 sm:h-96 p-4 bg-slate-900 text-slate-100 font-mono text-xs sm:text-sm leading-relaxed resize-y focus:outline-none"
             placeholder={'IDENTIFICATION DIVISION.\nPROGRAM-ID. HELLO.\n\nPROCEDURE DIVISION.\n    DISPLAY "Namaste COBOL!".\n    STOP RUN.'}
             spellCheck={false}
           />
@@ -30,12 +30,12 @@ export default function CompilerPage() {
           </div>
           <div className="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50">
             <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-3">📖 Quick Reference</h3>
-            <div className="space-y-2 text-sm">
-              <div className="p-2 rounded bg-slate-50 dark:bg-slate-900 font-mono"><span className="text-cobol-600">IDENTIFICATION</span> DIVISION.</div>
-              <div className="p-2 rounded bg-slate-50 dark:bg-slate-900 font-mono"><span className="text-cobol-600">PROGRAM-ID.</span> MY-PROGRAM.</div>
-              <div className="p-2 rounded bg-slate-50 dark:bg-slate-900 font-mono"><span className="text-cobol-600">PROCEDURE</span> DIVISION.</div>
-              <div className="p-2 rounded bg-slate-50 dark:bg-slate-900 font-mono"><span className="text-green-600">DISPLAY</span> "Hello".</div>
-              <div className="p-2 rounded bg-slate-50 dark:bg-slate-900 font-mono"><span className="text-green-600">STOP</span> RUN.</div>
+            <div className="space-y-2 text-sm overflow-x-auto">
+              <div className="p-2 rounded bg-slate-50 dark:bg-slate-900 font-mono whitespace-nowrap"><span className="text-cobol-600">IDENTIFICATION</span> DIVISION.</div>
+              <div className="p-2 rounded bg-slate-50 dark:bg-slate-900 font-mono whitespace-nowrap"><span className="text-cobol-600">PROGRAM-ID.</span> MY-PROGRAM.</div>
+              <div className="p-2 rounded bg-slate-50 dark:bg-slate-900 font-mono whitespace-nowrap"><span className="text-cobol-600">PROCEDURE</span> DIVISION.</div>
+              <div className="p-2 rounded bg-slate-50 dark:bg-slate-900 font-mono whitespace-nowrap"><span className="text-green-600">DISPLAY</span> "Hello".</div>
+              <div className="p-2 rounded bg-slate-50 dark:bg-slate-900 font-mono whitespace-nowrap"><span className="text-green-600">STOP</span> RUN.</div>
             </div>
           </div>
           <div className="p-4 rounded-xl bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800">

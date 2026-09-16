@@ -35,11 +35,11 @@ export default function HomePage() {
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-8">
             COBOL programming Hinglish mein seekhein — banking, mainframe, aur enterprise applications.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/tutorials" className="px-8 py-3 rounded-xl bg-cobol-600 text-white font-medium hover:bg-cobol-700 transition-colors shadow-lg shadow-cobol-600/25">
+          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 w-full sm:w-auto">
+            <Link to="/tutorials" className="px-6 sm:px-8 py-3 rounded-xl bg-cobol-600 text-white font-medium hover:bg-cobol-700 transition-colors shadow-lg shadow-cobol-600/25 text-center">
               Abhi Shuru Karein →
             </Link>
-            <Link to="/compiler" className="px-8 py-3 rounded-xl border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+            <Link to="/compiler" className="px-6 sm:px-8 py-3 rounded-xl border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-center">
               💻 Online Compiler
             </Link>
           </div>

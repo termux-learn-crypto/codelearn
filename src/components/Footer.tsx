@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/50">
       <div className="max-w-6xl mx-auto px-4 py-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <Link to="/" className="font-bold text-lg">
               <span className="text-cobol-600 dark:text-cobol-400">COBOL</span>

@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .dark {
@@ -18,6 +30,13 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-start-rgb));
   font-family: 'Noto Sans Devanagari', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+input, textarea, button, select {
+  font: inherit;
 }
 
 .cobol-code {
@@ -29,6 +48,7 @@ body {
   font-size: 0.875rem;
   line-height: 1.6;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .gradient-text {
@@ -47,4 +67,11 @@ body {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .card-hover:active {
+    transform: scale(0.98);
+    box-shadow: none;
+  }
 }

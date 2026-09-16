@@ -29,10 +29,10 @@ export default function TutorialPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-slate-500 mb-6">
+      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-slate-500 mb-6">
         <Link to="/" className="hover:text-cobol-600">Home</Link><span>/</span>
         <Link to="/tutorials" className="hover:text-cobol-600">Tutorials</Link><span>/</span>
-        <span className="text-slate-700 dark:text-slate-300">{tutorial.title}</span>
+        <span className="text-slate-700 dark:text-slate-300 break-words">{tutorial.title}</span>
       </div>
 
       {/* Header */}
@@ -52,7 +52,7 @@ export default function TutorialPage() {
             <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-4">{section.title}</h2>
             <div className="space-y-2">
               {section.content.split('\n').map((line, i) => (
-                <p key={i} className="text-slate-700 dark:text-slate-300 leading-relaxed">{line}</p>
+                <p key={i} className="text-slate-700 dark:text-slate-300 leading-relaxed break-words">{line}</p>
               ))}
             </div>
             {section.code && <div className="mt-4"><CodeEditor initialCode={section.code} readOnly /></div>}
@@ -75,12 +75,12 @@ export default function TutorialPage() {
       )}
 
       {/* Navigation */}
-      <div className="mt-12 flex justify-between">
+      <div className="mt-12 flex flex-col sm:flex-row justify-between gap-3 sm:gap-4">
         {tutorial.prev ? (
-          <Link to={`/tutorial/${tutorial.prev}`} className="px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">← Previous</Link>
-        ) : <div />}
+          <Link to={`/tutorial/${tutorial.prev}`} className="w-full sm:w-auto text-center px-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">← Previous</Link>
+        ) : <div className="hidden sm:block" />}
         {tutorial.next && (
-          <Link to={`/tutorial/${tutorial.next}`} className="px-4 py-2 rounded-lg bg-cobol-600 text-white hover:bg-cobol-700 transition-colors">Next Tutorial →</Link>
+          <Link to={`/tutorial/${tutorial.next}`} className="w-full sm:w-auto text-center px-4 py-3 rounded-lg bg-cobol-600 text-white hover:bg-cobol-700 transition-colors">Next Tutorial →</Link>
         )}
       </div>
     </div>
