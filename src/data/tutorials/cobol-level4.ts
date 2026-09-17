@@ -188,6 +188,6 @@ export const cobolLevel4: Tutorial[] = [
     ],
     related: ["cobol-payroll", "cobol-bank-system"],
     prev: "cobol-payroll",
-    next: "cobol-bank-system",
+    next: null,
   },
 ];

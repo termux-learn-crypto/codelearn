@@ -1,34 +1,23 @@
 import { Link } from 'react-router-dom'
 import { SectionHeader } from '@/components/Cards'
+import CodeEditor from '@/components/CodeEditor'
+
+const defaultCode = `IDENTIFICATION DIVISION.
+PROGRAM-ID. HELLO.
+
+PROCEDURE DIVISION.
+    DISPLAY "Namaste COBOL!".
+    STOP RUN.`
 
 export default function CompilerPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
       <SectionHeader title="Online COBOL Compiler" subtitle="Apna COBOL code yahan likhein aur chalayein" />
       <div className="grid lg:grid-cols-2 gap-6">
-        <div className="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
-          <div className="flex items-center justify-between px-4 py-2 bg-slate-100 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700">
-            <div className="flex items-center gap-2">
-              <div className="flex gap-1.5">
-                <div className="w-3 h-3 rounded-full bg-red-400" />
-                <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                <div className="w-3 h-3 rounded-full bg-green-400" />
-              </div>
-              <span className="text-xs text-slate-500 ml-2">COBOL</span>
-            </div>
-            <button className="px-3 py-1 text-xs rounded-md bg-cobol-600 text-white hover:bg-cobol-700 transition-colors">▶ Run</button>
-          </div>
-          <textarea
-            className="w-full h-64 sm:h-96 p-4 bg-slate-900 text-slate-100 font-mono text-xs sm:text-sm leading-relaxed resize-y focus:outline-none"
-            placeholder={'IDENTIFICATION DIVISION.\nPROGRAM-ID. HELLO.\n\nPROCEDURE DIVISION.\n    DISPLAY "Namaste COBOL!".\n    STOP RUN.'}
-            spellCheck={false}
-          />
+        <div>
+          <CodeEditor initialCode={defaultCode} language="cobol" />
         </div>
         <div className="space-y-6">
-          <div className="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
-            <div className="px-4 py-2 bg-slate-800 text-xs text-slate-400 uppercase tracking-wider">Output</div>
-            <div className="p-4 bg-slate-950 min-h-[200px]"><pre className="text-green-400 font-mono text-sm" /></div>
-          </div>
           <div className="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50">
             <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-3">📖 Quick Reference</h3>
             <div className="space-y-2 text-sm overflow-x-auto">

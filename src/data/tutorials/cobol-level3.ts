@@ -47,9 +47,9 @@ export const cobolLevel3: Tutorial[] = [
         correct: 2,
       },
     ],
-    related: ["cobol-cics", "cobol-performance"],
-    prev: "cobol-cics",
-    next: "cobol-performance",
+    related: ["cobol-date", "cobol-cics"],
+    prev: "cobol-date",
+    next: "cobol-cics",
   },
   {
     slug: "cobol-cics",

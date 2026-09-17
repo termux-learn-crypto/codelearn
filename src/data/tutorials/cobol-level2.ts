@@ -283,8 +283,8 @@ export const cobolLevel2: Tutorial[] = [
         correct: 1,
       },
     ],
-    related: ["cobol-errors", "cobol-projects"],
+    related: ["cobol-errors", "cobol-db2"],
     prev: "cobol-errors",
-    next: "cobol-projects",
+    next: "cobol-db2",
   },
 ];

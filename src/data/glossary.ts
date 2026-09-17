@@ -105,6 +105,7 @@ export const glossary: GlossaryTerm[] = [
     term: "REDEFINES",
     hindiMeaning: "पुनर्परिभाषा",
     description: "Ek hi memory location ko alag-alag data type se use karna.",
+    example: "01 WS-NUMBER PIC 9(5).\n01 WS-REDEFINES REDEFINES WS-NUMBER PIC X(5).",
   },
   {
     term: "OCCURS",
@@ -173,12 +174,6 @@ export const glossary: GlossaryTerm[] = [
     term: "DATA DIVISION",
     hindiMeaning: "डेटा विभाग",
     description: "Saari variables, files, aur data definitions yahan hoti hain.",
-  },
-  {
-    term: "REDEFINES",
-    hindiMeaning: "पुनर्परिभाषा",
-    description: "Ek hi memory location ko alag tarike se dekhna.",
-    example: "01 WS-NUMBER PIC 9(5).\n01 WS-REDEFINES REDEFINES WS-NUMBER PIC X(5).",
   },
 ];
 
