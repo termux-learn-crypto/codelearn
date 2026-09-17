@@ -9,6 +9,7 @@ import QuizPage from './pages/QuizPage'
 import GlossaryPage from './pages/GlossaryPage'
 import ProjectsPage from './pages/ProjectsPage'
 import AboutPage from './pages/AboutPage'
+import InstallPage from './pages/InstallPage'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/tutorials" element={<TutorialsPage />} />
           <Route path="/tutorial/:slug" element={<TutorialPage />} />
           <Route path="/compiler" element={<CompilerPage />} />
+          <Route path="/install" element={<InstallPage />} />
           <Route path="/quiz" element={<QuizPage />} />
           <Route path="/glossary" element={<GlossaryPage />} />
           <Route path="/projects" element={<ProjectsPage />} />

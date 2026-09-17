@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const footerLinks = [
   { title: 'Seekhein', links: [{ href: '/tutorials', label: 'Tutorials' }, { href: '/projects', label: 'Projects' }, { href: '/quiz', label: 'Quiz' }, { href: '/glossary', label: 'Glossary' }] },
-  { title: 'Resources', links: [{ href: '/compiler', label: 'Online Compiler' }, { href: '/about', label: 'About COBOL' }] },
+  { title: 'Resources', links: [{ href: '/install', label: 'COBOL Install Karein' }, { href: '/compiler', label: 'Online Compiler' }, { href: '/about', label: 'About COBOL' }] },
 ]
 
 export default function Footer() {

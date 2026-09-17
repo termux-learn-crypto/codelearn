@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { SectionHeader } from '@/components/Cards'
 
 export default function CompilerPage() {
@@ -39,7 +40,7 @@ export default function CompilerPage() {
             </div>
           </div>
           <div className="p-4 rounded-xl bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800">
-            <p className="text-sm text-yellow-700 dark:text-yellow-300">⚠️ Online compiler jaldi aayega! Abhi tutorials mein code examples padho aur GnuCOBOL install karke try karo.</p>
+            <p className="text-sm text-yellow-700 dark:text-yellow-300">⚠️ Online compiler jaldi aayega! Abhi GnuCOBOL install karke try karo — <Link to="/install" className="underline font-medium">Installation Guide →</Link></p>
           </div>
         </div>
       </div>
